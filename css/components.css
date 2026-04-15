@@ -1,0 +1,84 @@
+.btn {
+    padding: 0.7rem 1.4rem;
+    border-radius: var(--radius-sm);
+    display: inline-block;
+    font-size: var(--fs-sm);
+    cursor: pointer;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.btn--primary {
+    background-color: var(--clr-secondary);
+    color: #fff;
+}
+
+.btn--primary:hover {
+    transform: translateY(-2px);
+}
+
+
+/* SMALL BUTTON */
+
+.btn--small {
+    padding: 0.4rem 1rem;
+    border-radius: var(--radius-sm);
+    background-color: var(--clr-secondary);
+    color: #fff;
+}
+
+
+/* ABOUT QUOTE */
+.about__quote {
+    font-style: italic;
+    padding: var(--space-2);
+    border-left: 4px solid var(--clr-secondary);
+}
+
+
+/* SERVICE CARDS */
+
+.service-card {
+    background-color: #fff;
+    padding: var(--space-3);
+    border-radius: var(--radius-md);
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.8);
+}
+
+.service-card__icon {
+    font-size: 3rem;
+    margin-bottom: var(--space-2);
+}
+
+
+
+/* PORTFOLIO */
+/* .portfolio__buttons {
+    display: flex;
+    gap: var(--space-2);
+    margin-top: var(--space-2);
+} */
+
+
+/* CONTACT FORM */
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+}
+
+.contact__form input,
+.contact__form textarea {
+    border: 1px solid #ccc;
+    padding: var(--space-2);
+    border-radius: var(--radius-sm);
+    background-color: #fff;
+}
+
+.contact__info {
+    display: flex;
+    align-items: center;
+    gap: var(--space-1);
+    margin: var(--space-1) 0;
+}

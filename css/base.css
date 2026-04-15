@@ -1,0 +1,106 @@
+/* Global reset, Variables & Typography */
+
+:root {
+    /* COLORS */
+    --clr-bg: #fafaf8;
+    --clr-text: #0a0903;
+    --clr-secondary: #9e0031;
+
+    /* Typography */
+    --fs-xs: 0.9rem;
+    --fs-sm: 1rem;
+    --fs-md: 1.2rem;
+    --fs-lg: 1.75rem;
+    --fs-xl: 3rem;
+
+    /* LAYOUT */
+    --max-width: 1200px;
+    --radius-sm: 8px;
+    --radius-md: 16px;
+    --transition: all 0.3s ease;
+
+    /* SPACING SYSTEM */
+    --space-1: 0.5rem; /* 8px */
+    --space-2: 1rem;   /* 16px */
+    --space-3: 1.5rem; /* 24px */
+    --space-4: 2rem;   /* 32px */
+    --space-5: 3rem;   /* 48px */
+    --space-6: 4rem;   /* 64px */
+
+    /* SHADOWS */
+    --shadow-sm: 0 4px 10px rgba(0,0,0,0.8);
+    --shadow-md: 0 6px 20px rgba(0,0,0,0.12);
+
+    /* BREAKPOINTS */
+    --bp-desktop: 992px;
+    --bp-table: 768px;
+    --bp-mobile: 480px;
+}
+
+/* GLOBAL RESET */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--clr-bg);
+    color: var(--clr-text);
+    font-family: "Bodoni Moda", serif;
+    line-height: 1.6;
+}
+
+/* GLOBAL TAG STYLES */
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* List cleanup */
+ul, li {
+    list-style: none;
+}
+
+/* LINKS */
+
+a {
+    text-decoration: none;
+    color: var(--clr-text);
+}
+
+
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-family: inherit;
+}
+
+/* GLOBAL SECTIONS */
+
+.section {
+    padding: var(--space-6) var(--space-2);
+    scroll-margin-top: 80px; /*scroll-margin-top spune browserului „când faci scroll către acest element, lasă un spațiu de X pixeli deasupra”.*/
+}
+
+.section__title {
+    font-size: var(--fs-md);
+    text-align: center;
+    margin-bottom: var(--space-4);
+}
+
+.section__container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
